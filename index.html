@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Benjamin Davidorf — Published Works</title>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: #f9f7f3;
+      color: #1a1a1a;
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.7;
+      padding: 60px 24px 100px;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    /* ── Header ── */
+    header {
+      border-bottom: 2px solid #1a1a2e;
+      padding-bottom: 24px;
+      margin-bottom: 48px;
+    }
+
+    h1 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 2.4rem;
+      font-weight: 500;
+      letter-spacing: 0.01em;
+      color: #1a1a2e;
+      line-height: 1.2;
+      margin-bottom: 6px;
+    }
+
+    .header-subtitle {
+      font-family: 'Crimson Text', Georgia, serif;
+      font-size: 1.05rem;
+      font-style: italic;
+      color: #555;
+      letter-spacing: 0.01em;
+    }
+
+    /* ── Section titles ── */
+    h2 {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #1a1a2e;
+      border-bottom: 1px solid #c8c0b0;
+      padding-bottom: 6px;
+      margin-bottom: 20px;
+    }
+
+    section {
+      margin-bottom: 48px;
+    }
+
+    /* ── Education ── */
+    .degree-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .degree-list li {
+      display: flex;
+      gap: 20px;
+      align-items: baseline;
+    }
+
+    .degree-year {
+      font-family: 'Crimson Text', Georgia, serif;
+      font-size: 0.95rem;
+      color: #7a6e5f;
+      min-width: 46px;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    .degree-text {
+      font-size: 1rem;
+      color: #1a1a1a;
+    }
+
+    .degree-text .institution {
+      font-style: italic;
+      color: #444;
+    }
+
+    /* ── Awards ── */
+    .award-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .award-list li {
+      display: flex;
+      gap: 20px;
+      align-items: baseline;
+    }
+
+    .award-year {
+      font-family: 'Crimson Text', Georgia, serif;
+      font-size: 0.95rem;
+      color: #7a6e5f;
+      min-width: 46px;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+
+    .award-text {
+      font-size: 1rem;
+      color: #1a1a1a;
+    }
+
+    /* ── Publications ── */
+    .pub-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      counter-reset: pub-counter;
+    }
+
+    .pub-item {
+      display: flex;
+      gap: 16px;
+      counter-increment: pub-counter;
+    }
+
+    .pub-item::before {
+      content: counter(pub-counter) ".";
+      font-family: 'Crimson Text', Georgia, serif;
+      font-size: 0.95rem;
+      color: #7a6e5f;
+      min-width: 24px;
+      padding-top: 2px;
+      flex-shrink: 0;
+    }
+
+    .pub-body {
+      font-size: 1rem;
+      color: #1a1a1a;
+      line-height: 1.65;
+    }
+
+    .pub-body em {
+      font-style: italic;
+    }
+
+    .pub-doi {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 0.88rem;
+      font-family: 'Crimson Text', Georgia, serif;
+      color: #2c4a7c;
+      text-decoration: none;
+    }
+
+    .pub-doi:hover {
+      text-decoration: underline;
+    }
+
+    .pub-status {
+      display: inline-block;
+      margin-top: 4px;
+      font-size: 0.88rem;
+      font-family: 'Crimson Text', Georgia, serif;
+      font-style: italic;
+      color: #888;
+    }
+
+    b.author {
+      font-weight: 600;
+      color: #1a1a2e;
+    }
+
+    /* ── Footer ── */
+    footer {
+      margin-top: 60px;
+      padding-top: 20px;
+      border-top: 1px solid #c8c0b0;
+      font-family: 'Crimson Text', Georgia, serif;
+      font-size: 0.9rem;
+      font-style: italic;
+      color: #888;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>Benjamin Davidorf</h1>
+    <p class="header-subtitle">Academic Profile &amp; Published Works</p>
+  </header>
+
+  <!-- Education -->
+  <section>
+    <h2>Education</h2>
+    <ul class="degree-list">
+      <li>
+        <span class="degree-year">2022</span>
+        <span class="degree-text">
+          B.S. in Biomedical Engineering, Minors in Mechanical Engineering and Economics<br>
+          <span class="institution">Washington University in St. Louis</span>
+        </span>
+      </li>
+      <li>
+        <span class="degree-year">2023</span>
+        <span class="degree-text">
+          M.S. in Biomedical Engineering<br>
+          <span class="institution">Washington University in St. Louis</span>
+        </span>
+      </li>
+      <li>
+        <span class="degree-year">2028*</span>
+        <span class="degree-text">
+          Ph.D. Candidate in Immunology and Immune Therapeutics<br>
+          <span class="institution">*Expected Graduation</span>
+        </span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Awards -->
+  <section>
+    <h2>Awards &amp; Honors</h2>
+    <ul class="award-list">
+      <li>
+        <span class="award-year">2024</span>
+        <span class="award-text">Crohn's and Colitis Foundation Research Fellowship Award</span>
+      </li>
+      <li>
+        <span class="award-year">2023</span>
+        <span class="award-text">Keck School of Medicine's Director's Award</span>
+      </li>
+      <li>
+        <span class="award-year">2023</span>
+        <span class="award-text">Biomedical Engineering Society Vice President and Treasurer, Washington University in St. Louis Chapter</span>
+      </li>
+      <li>
+        <span class="award-year">2022</span>
+        <span class="award-text">Washington University Innovation and Entrepreneurship Award Presented by the Skandalaris Center</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- Publications -->
+  <section>
+    <h2>Publications</h2>
+    <ol class="pub-list">
+
+      <li class="pub-item">
+        <div class="pub-body">
+          <b class="author">Davidorf B</b>, Ho D, Bouch R, Yu J, Dong P, Liu L, Song Q, He Z. Distinct Intercellular Communication Architectures Underlie Pathogenic and Protective Th17 Responses in Infection and Autoimmune Colitis. <em>Scientific Reports.</em> Under Revision. March 2026.<br>
+          <span class="pub-status">Under revision &mdash; link forthcoming</span>
+        </div>
+      </li>
+
+      <li class="pub-item">
+        <div class="pub-body">
+          Liu L, <b class="author">Davidorf B</b>, Dong P, Yu J, Ho D, Zhang B, &amp; He Z. DAB2IP modulates intestinal inflammation by enhancing ILC3 function in the gut. <em>J Immunol.</em> 2026. In press.<br>
+          <a class="pub-doi" href="https://doi.org/10.1093/jimmun/vkag050" target="_blank" rel="noopener">https://doi.org/10.1093/jimmun/vkag050</a>
+        </div>
+      </li>
+
+      <li class="pub-item">
+        <div class="pub-body">
+          Liu L, <b class="author">Davidorf B</b>, Dong P, Peng A, Song Q, He Z. Decoding the mosaic of inflammatory bowel disease: Illuminating insights with single-cell RNA technology. <em>Comput Struct Biotechnol J.</em> 2024;23:2911&ndash;2923. Published 2024 Jul 11.<br>
+          <a class="pub-doi" href="https://doi.org/10.1016/j.csbj.2024.07.011" target="_blank" rel="noopener">https://doi.org/10.1016/j.csbj.2024.07.011</a>
+        </div>
+      </li>
+
+      <li class="pub-item">
+        <div class="pub-body">
+          Dong P, Liu L, Yu J, Li N, <b class="author">Davidorf B</b>, Shen S, Bouch R, Zhang J, Ho D, Xiao G, Akbari O, Zhang B, He Z. Enhanced HIF-1&alpha; cooperation by a human ROR&gamma;t mutant potentiates Th17 pathogenicity. <em>Cell Reports.</em> 2026;45. Published 2026 Apr 28.<br>
+          <a class="pub-doi" href="https://doi.org/10.1016/j.celrep.2026.117123" target="_blank" rel="noopener">https://doi.org/10.1016/j.celrep.2026.117123</a>
+        </div>
+      </li>
+
+    </ol>
+  </section>
+
+  <footer>Benjamin Davidorf &mdash; Academic Profile</footer>
+
+</div>
+</body>
+</html>
